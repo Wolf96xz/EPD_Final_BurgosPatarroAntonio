@@ -17,7 +17,7 @@ public class Simulacion {
         PartidaTipo1 p = new PartidaTipo1(disposicionTablero);
         PartidaTipo2 p2 = new PartidaTipo2(disposicionTablero);
 
-        p2.jugar();
+        p.jugar();
     }
 
 

@@ -137,13 +137,14 @@ public abstract class Partida {
             return 2;
 
         }
-        if (!p2.isVivo() && p2 instanceof Planta) {
+        if (!p2.isVivo() && p2 instanceof Planta ) {
             plantasGuerreras_muertas++;
         } else if (!p2.isVivo() && p2 instanceof Zombi) {
             zombis_muertos++;
         } else if (!p1.isVivo() && p1 instanceof PlantaRecolectora) {
             plantasRecolectoras_muertas++;
-        } if (!p1.isVivo() && p1 instanceof Planta) {
+        }
+        if (!p1.isVivo() && p1 instanceof Planta) {
             plantasGuerreras_muertas++;
         }
         if (!p1.isVivo() && p1 instanceof Zombi) {
