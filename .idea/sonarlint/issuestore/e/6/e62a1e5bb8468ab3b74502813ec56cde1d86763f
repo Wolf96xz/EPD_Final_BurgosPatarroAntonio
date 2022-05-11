@@ -1,0 +1,51 @@
+
+r	java:S127""XRefactor the code in order to not assign to this loop counter from within the loop body.(íÚÄÃûÿÿÿÿ
+l	java:S127#"XRefactor the code in order to not assign to this loop counter from within the loop body.(¦®Ÿ
+k	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¹Èİÿÿÿÿÿ
+f	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÜÊ
+R
+java:S2589\"7Remove this expression which always evaluates to "true"(Ñ­½Õûÿÿÿÿ
+v	java:S116
+"aRename this field "plantasGuerreras_vivas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÅëÙ
+q	java:S116"WRename this field "zombis_vivos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥§‡Æúÿÿÿÿ
+~	java:S116"dRename this field "plantasRecolectoras_vivas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‡–âÿÿÿÿÿ
+x	java:S116"cRename this field "plantasGuerreras_muertas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ô©É
+m	java:S116"YRename this field "zombis_muertos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ƒµ3
+z	java:S116"fRename this field "plantasRecolectoras_muertas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÆªa
+k	java:S116"WRename this field "num_combates" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Æ»f
+O
+java:S5993"9Change the visibility of this constructor to "protected".(œÚ°Ù
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(·¤›ì
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(àõÛ¯
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(ëƒ‚£
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(ó©–úÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(òœé¨ûÿÿÿÿ
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(Ğí§¥üÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(ÎêŞ·şÿÿÿÿ
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(ñ·à
+M	java:S106Q"9Replace this use of System.out or System.err by a logger.(¤íĞ
+
+N	java:S106S"9Replace this use of System.out or System.err by a logger.(Ìò°Ó
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(‡›³Œúÿÿÿÿ
+N	java:S106U"9Replace this use of System.out or System.err by a logger.(›‘¾¨
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(³¢Í
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(µºøÍ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(øëµ
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(Çø¸Ğÿÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(õí¤ê
+m
+java:S3776e"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Òªô×üÿÿÿÿ
+S	java:S106g"9Replace this use of System.out or System.err by a logger.(‘ËØ„ÿÿÿÿÿ
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(¬•Éş
+S	java:S106q"9Replace this use of System.out or System.err by a logger.(®‘Ğ½ÿÿÿÿÿ
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(ÿ¼êİÿÿÿÿÿ
+N	java:S106y"9Replace this use of System.out or System.err by a logger.(¯Ì­¡
+T	java:S106¤"9Replace this use of System.out or System.err by a logger.(€ì·ğşÿÿÿÿ
+T	java:S106ª"9Replace this use of System.out or System.err by a logger.(¥ŠÕæøÿÿÿÿ
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(é°Áúÿÿÿÿ
+T	java:S106½"9Replace this use of System.out or System.err by a logger.(ÊÜËİúÿÿÿÿ
+T	java:S106Á"9Replace this use of System.out or System.err by a logger.(«ƒÅñûÿÿÿÿ
+O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(¨€†‰
+O	java:S106Ó"9Replace this use of System.out or System.err by a logger.(‹òù
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

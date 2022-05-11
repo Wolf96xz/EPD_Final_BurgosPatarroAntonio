@@ -17,8 +17,13 @@ public class Guerrero implements Personaje{
         if (ataque >= 0 && ataque <= MAX_ATAQUE){
             this.ataque = ataque;
         }
+        if (ataque > MAX_ATAQUE){
+            this.ataque = MAX_ATAQUE;
+        }
         if (defensa >= 0 && defensa <= MAX_DEFENSA){
             this.defensa = defensa;
+        }else if(defensa > MAX_DEFENSA){
+            this.defensa = MAX_DEFENSA;
         }
         this.nivelVida = MAX_NIVEL_VIDA;
     }

@@ -18,9 +18,14 @@ public abstract class Partida {
     public Partida(String[] disposicionTablero) {
         plantasGuerreras_vivas = Integer.parseInt(disposicionTablero[0].substring(8));
         zombis_vivos = Integer.parseInt(disposicionTablero[1].substring(7));
+        plantasRecolectoras_vivas = Integer.parseInt(disposicionTablero[2].substring(13));
 
         plantasGuerreras = new Planta[plantasGuerreras_vivas];
         zombis = new Zombi[zombis_vivos];
+        plantasRecolectoras = new PlantaRecolectora[plantasRecolectoras_vivas];
+
+        for (int x = 0; x < plantasRecolectoras.length; x++) { plantasRecolectoras[x] = new PlantaRecolectora(); }
+
 
 
         for (int z = 0; z < zombis.length; z++) { // Inserta en el vector de zombis los que participaran en la partida correspondiente, delimitados por el vector del tablero
@@ -34,12 +39,6 @@ public abstract class Partida {
             }
         }
 
-        int j = Integer.parseInt(disposicionTablero[2].substring(13));
-        plantasRecolectoras = new PlantaRecolectora[j];
-        for (int x = 0; x < j; x++) {
-            plantasRecolectoras[x] = new PlantaRecolectora();
-            plantasRecolectoras_vivas++;
-        }
 
 
         }
@@ -69,24 +68,21 @@ public abstract class Partida {
 
     public void imprimeEstadoPartida(){
         System.out.println("******** ESTADO GLOBAL DE LA PARTIDA *********");
-        int plantasIniciales = plantasGuerreras_vivas - plantasGuerreras_muertas;
-        int zombiesIniciales = zombis_vivos - zombis_muertos;
-        int plantasRecolectorasIniciales = plantasRecolectoras_vivas - plantasRecolectoras_muertas;
 
 
         System.out.println("- PLANTAS GUERRERAS: ");
-        System.out.println("\t - Numero inicial de planta de tipo guerrera: " +plantasGuerreras_vivas);
-        System.out.println("\t - Numero de planta de tipo guerrera vivas: " +plantasIniciales);
+        System.out.println("\t - Numero inicial de planta de tipo guerrera: " +plantasGuerreras.length);
+        System.out.println("\t - Numero de planta de tipo guerrera vivas: " +plantasGuerreras_vivas);
         System.out.println("\t - Numero de planta de tipo guerrera muertas: " +plantasGuerreras_muertas);
 
         System.out.println("- ZOMBIS: ");
-        System.out.println("\t - Numero inicial de zombis: " +zombis_vivos);
-        System.out.println("\t - Numero de zombis vivos: " +zombiesIniciales);
+        System.out.println("\t - Numero inicial de zombis: " +zombis.length);
+        System.out.println("\t - Numero de zombis vivos: " +zombis_vivos);
         System.out.println("\t - Numero de zombis muertos: " +zombis_muertos);
 
         System.out.println("- RECOLECTORAS: ");
-        System.out.println("\t - Numero inicial de planta de tipo recolectoras: " +plantasRecolectoras_vivas);
-        System.out.println("\t - Numero de planta de tipo planta recolectora vivas: " +plantasRecolectorasIniciales);
+        System.out.println("\t - Numero inicial de planta de tipo recolectoras: " +plantasRecolectoras.length);
+        System.out.println("\t - Numero de planta de tipo planta recolectora vivas: " +plantasRecolectoras_vivas);
         System.out.println("\t - Numero de planta de tipo planta recolectora muertas: " +plantasRecolectoras_muertas);
 
         if (plantasGuerreras_vivas > zombis_vivos){
@@ -121,10 +117,48 @@ public abstract class Partida {
             System.out.println("Dos plantas recolectoras no pueden luchar entre sí");
             return -1;
         }
+        if (p1 instanceof PlantaRecolectora && p2 instanceof Planta){
+            System.out.println("Son del mismo bando");
+            return -1;
+        }
+
+
         // Bloque de ifs que comparan ataque y defensa de los dos personajes para hacer calculo de daño a sus puntos de vida
+
         p1.setNivelVida(p1.getNivelVida() - dañoFinal2);
         p2.setNivelVida(p2.getNivelVida() - dañoFinal);
         num_combates++;
+
+        if (!p2.isVivo()) {
+            if (p2 instanceof Planta) {
+                plantasGuerreras_muertas++;
+                plantasGuerreras_vivas--;
+            }
+            if (p2 instanceof Zombi){
+                zombis_muertos++;
+                zombis_vivos--;
+            }
+            if (p2 instanceof PlantaRecolectora){
+                plantasRecolectoras_muertas++;
+                plantasRecolectoras_vivas--;
+            }
+        }
+        if (!p1.isVivo()) {
+            if (p1 instanceof Planta) {
+                plantasGuerreras_muertas++;
+                plantasGuerreras_vivas--;
+
+            }
+            if (p1 instanceof Zombi){
+                zombis_muertos++;
+                zombis_vivos--;
+
+            }
+            if (p1 instanceof PlantaRecolectora){
+                plantasRecolectoras_muertas++;
+                plantasRecolectoras_vivas--;
+            }
+        }
 
         if (p1.getNivelVida() > p2.getNivelVida()) {
             System.out.println(" ========" + " " + "GANADOR: " + " " + p1.getNombre());
@@ -137,19 +171,8 @@ public abstract class Partida {
             return 2;
 
         }
-        if (!p2.isVivo() && p2 instanceof Planta ) {
-            plantasGuerreras_muertas++;
-        } else if (!p2.isVivo() && p2 instanceof Zombi) {
-            zombis_muertos++;
-        } else if (!p1.isVivo() && p1 instanceof PlantaRecolectora) {
-            plantasRecolectoras_muertas++;
-        }
-        if (!p1.isVivo() && p1 instanceof Planta) {
-            plantasGuerreras_muertas++;
-        }
-        if (!p1.isVivo() && p1 instanceof Zombi) {
-            zombis_muertos++;
-        }
+
+
 
 
         System.out.println("Ambos personajes empatan");

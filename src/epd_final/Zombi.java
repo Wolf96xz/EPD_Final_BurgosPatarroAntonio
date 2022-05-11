@@ -9,8 +9,6 @@ public class Zombi extends Guerrero{
         super(nombre, ataque, defensa);
         this.infeccion = infeccion;
         this.habilidad = habilidad;
-        this.nivelVida = MAX_NIVEL_VIDA;
-        this.ataque = this.habilidad.getPotencia() + ataque; // Segun su habilidad, ganara mas ataque en consecuencia
     }
 
     @Override

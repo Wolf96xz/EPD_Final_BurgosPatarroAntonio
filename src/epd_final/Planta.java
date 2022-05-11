@@ -6,7 +6,6 @@ public class Planta extends Guerrero{
     public Planta(String nombre, int ataque, int defensa, Arma arma) {
         super(nombre, ataque, defensa);
         this.arma = arma;
-        this.ataque = arma.getPotencia() + this.ataque; // Su ataque base se ve aumentado según el arma que tenga equipada
     }
 
     @Override
