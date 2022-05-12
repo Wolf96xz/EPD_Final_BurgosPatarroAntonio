@@ -1,7 +1,6 @@
 package epd_final;
 
 
-import java.util.Arrays;
 
 public abstract class Partida {
     protected Planta[] plantasGuerreras;
@@ -98,6 +97,7 @@ public abstract class Partida {
 
     }
 
+
     protected int combate(Personaje p1, Personaje p2) {
 
         System.out.println("COMBATE: " + p1.getNombre() + " " + "vs" + " " + p2.getNombre());
@@ -123,11 +123,11 @@ public abstract class Partida {
         }
 
 
-        // Bloque de ifs que comparan ataque y defensa de los dos personajes para hacer calculo de daño a sus puntos de vida
 
         p1.setNivelVida(p1.getNivelVida() - dañoFinal2);
         p2.setNivelVida(p2.getNivelVida() - dañoFinal);
         num_combates++;
+
 
         if (!p2.isVivo()) {
             if (p2 instanceof Planta) {

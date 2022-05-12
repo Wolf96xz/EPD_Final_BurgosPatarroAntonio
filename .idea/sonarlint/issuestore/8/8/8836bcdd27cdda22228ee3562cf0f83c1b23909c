@@ -1,26 +1,0 @@
-
-
-java:S11927"kDefine a constant instead of duplicating this literal "******************************************" 4 times.(ñßÁÚ
-5
-java:S1659"Declare "a" on a separate line.(€óÌÙ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(”ö¤3
-N	java:S106"9Replace this use of System.out or System.err by a logger.(å“ñ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ë™İ¹
-S	java:S106"9Replace this use of System.out or System.err by a logger.(µÁŸôùÿÿÿÿ
-N	java:S106 "9Replace this use of System.out or System.err by a logger.(µÒ²·
-9
-java:S2119""Save and re-use this "Random".(º¼œ¤ûÿÿÿÿ
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(¨ÂÍ¾üÿÿÿÿ
-9
-java:S2119("Save and re-use this "Random".(à£ÕÅüÿÿÿÿ
-9
-java:S2119)"Save and re-use this "Random".(ªôÊáşÿÿÿÿ
-M	java:S106*"9Replace this use of System.out or System.err by a logger.(–½ØA
-9
-java:S2119+"Save and re-use this "Random".(ï¢ßÊüÿÿÿÿ
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(ñßÁÚ
-S	java:S1068"9Replace this use of System.out or System.err by a logger.(Ó‡öúÿÿÿÿ
-N	java:S1069"9Replace this use of System.out or System.err by a logger.(ñßÁÚ
-N	java:S106="9Replace this use of System.out or System.err by a logger.(ñßÁÚ
-S	java:S106>"9Replace this use of System.out or System.err by a logger.(…äÉâşÿÿÿÿ
-N	java:S106?"9Replace this use of System.out or System.err by a logger.(ñßÁÚ

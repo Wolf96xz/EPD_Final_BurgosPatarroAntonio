@@ -9,7 +9,12 @@ public class Zombi extends Guerrero{
         super(nombre, ataque, defensa);
         this.infeccion = infeccion;
         this.habilidad = habilidad;
+        if (this.ataque < 100){
+            this.ataque = habilidad.getPotencia() + this.ataque;
+        }
     }
+
+
 
     @Override
     public String toString() {

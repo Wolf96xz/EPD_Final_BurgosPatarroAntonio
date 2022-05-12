@@ -1,23 +1,0 @@
-
-
-java:S1192."kDefine a constant instead of duplicating this literal "******************************************" 4 times.(ñßÁÚ
-U
-java:S1161":Add the "@Override" annotation above this method signature(¥îâÂûÿÿÿÿ
-5
-java:S1659"Declare "a" on a separate line.(€óÌÙ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(”ö¤3
-N	java:S106"9Replace this use of System.out or System.err by a logger.(îËÀ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ë™İ¹
-N	java:S106"9Replace this use of System.out or System.err by a logger.( Ü¥¥
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¨ÂÍ¾üÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Óö¾»ùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÕÔŠıÿÿÿÿ
-4
-java:S2119!"Save and re-use this "Random".(¡Å”¦
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(×Êüÿÿÿÿ
-N	java:S106."9Replace this use of System.out or System.err by a logger.(ñßÁÚ
-S	java:S106/"9Replace this use of System.out or System.err by a logger.(Ó‡öúÿÿÿÿ
-N	java:S1060"9Replace this use of System.out or System.err by a logger.(ñßÁÚ
-N	java:S1064"9Replace this use of System.out or System.err by a logger.(ñßÁÚ
-S	java:S1065"9Replace this use of System.out or System.err by a logger.(…äÉâşÿÿÿÿ
-N	java:S1066"9Replace this use of System.out or System.err by a logger.(ñßÁÚ

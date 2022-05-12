@@ -1,18 +1,0 @@
-
-h	java:S116
-"SRename this field "SIN_ARMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý¾Ëï
-k	java:S116"QRename this field "COROLA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô¾Ô…øÿÿÿÿ
-l	java:S116"RRename this field "PISTILO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÒ³ÿÿÿÿÿÿ
-m	java:S116"SRename this field "ESTAMBRE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¿óÄûÿÿÿÿ
-j	java:S116"PRename this field "CALIZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¶À€ÿÿÿÿÿ
-7
-java:S1170
-"!Make this final field static too.(Ý¾Ëï
-<
-java:S1170"!Make this final field static too.(Ô¾Ô…øÿÿÿÿ
-<
-java:S1170"!Make this final field static too.(ûÒ³ÿÿÿÿÿÿ
-<
-java:S1170"!Make this final field static too.(ï¿óÄûÿÿÿÿ
-<
-java:S1170"!Make this final field static too.(’¶À€ÿÿÿÿÿ

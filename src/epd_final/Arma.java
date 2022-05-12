@@ -36,18 +36,18 @@ public class Arma {
     @Override
     public String toString() {
         if (this.tipo == COROLA){
-            return "Arma Corola" + this.potencia;
+            return "Arma Corola" + " " + "(" + this.potencia + ")";
         }else if (this.tipo == PISTILO){
-            return "Arma Pistilo" + this.potencia;
+            return "Arma Pistilo" + " " + "(" + this.potencia + ")";
         }
         else if (this.tipo == ESTAMBRE){
-            return "Arma Estambre" + this.potencia;
+            return "Arma Estambre" + " " + "(" + this.potencia + ")";
         }
         else if (this.tipo == CALIZ){
-            return "Arma Caliz" + this.potencia;
+            return "Arma Caliz" + " " + "(" + this.potencia + ")";
         }
 
-        return "Sin arma" + this.potencia;
+        return "Sin arma" + " " + "(" + this.potencia + ")";
 
     }
 

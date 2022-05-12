@@ -35,14 +35,14 @@ public class Habilidad {
     @Override
     public String toString() {
         if (this.tipo == SALTARIN){
-            return "Habilidad Saltarin" + this.potencia;
+            return "Habilidad Saltarin" + " " + "(" + this.potencia + ")";
         }else if (this.tipo == ESQUIVADOR){
-            return "Habilidad Esquivador" + this.potencia;
+            return "Habilidad Esquivador" + " " + "(" + this.potencia + ")";
         }
         else if (this.tipo == HIPNOTIZADOR){
-            return "Habilidad Hipnotizador" + this.potencia;
+            return "Habilidad Hipnotizador" + " " + "(" + this.potencia + ")";
         }
-        return "Sin arma" + this.potencia;
+        return "Sin arma" + " " + "(" + this.potencia + ")";
 
     }
 }
