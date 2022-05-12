@@ -12,7 +12,7 @@ public class Simulacion {
                 "P;Repetidora;10;7;1",
                 "Z;Zombistein;15;20;PolimÃ³rfico;1",
                 "P;Iris;28;21;3",
-                "Z;Zombot;1800;25;Influenza;1",
+                "Z;Zombot;18;25;Influenza;1",
                 "Z;Zombidito;21;8;Adenovirus;0",
                 "Z;Frank;25;10;Influenza;2",
         };

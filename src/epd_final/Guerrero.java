@@ -48,6 +48,15 @@ public class Guerrero implements Personaje{
         return nivelVida;
     }
 
+    private void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+
+    private void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
     @Override
     public void setNivelVida(int n) {
         if (n >= MAX_NIVEL_VIDA){

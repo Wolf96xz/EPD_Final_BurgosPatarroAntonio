@@ -101,8 +101,8 @@ public abstract class Partida {
     protected int combate(Personaje p1, Personaje p2) {
 
         System.out.println("COMBATE: " + p1.getNombre() + " " + "vs" + " " + p2.getNombre());
-        int dañoFinal = p1.getAtaque() - p2.getDefensa();
-        int dañoFinal2 = p2.getAtaque() - p1.getDefensa();
+        int dañoFinal = 0;
+        int dañoFinal2 = 0;
 
         // Tanda de ifs que comprueban requisitos como que no sean dos plantas entrentandose entre si, o dos pjs muertos en combate
         if (p1.getNivelVida() == 0 && p2.getNivelVida() == 0) {
@@ -123,9 +123,27 @@ public abstract class Partida {
         }
 
 
+        if (p1 instanceof Planta){
+            dañoFinal = (p1.getAtaque() + ((Planta) p1).getArma().getPotencia()) - p2.getDefensa();
+        }
+        if (p1 instanceof Zombi){
+            dañoFinal = (p1.getAtaque() + ((Zombi) p1).getHabilidad().getPotencia()) - p2.getDefensa();
+        }
 
-        p1.setNivelVida(p1.getNivelVida() - dañoFinal2);
-        p2.setNivelVida(p2.getNivelVida() - dañoFinal);
+        if (p2 instanceof Planta){
+            dañoFinal2 = (p2.getAtaque() + ((Planta) p2).getArma().getPotencia()) - p1.getDefensa();
+        }
+        if (p2 instanceof Zombi){
+            dañoFinal2 = (p2.getAtaque() + ((Zombi) p2).getHabilidad().getPotencia()) - p1.getDefensa();
+        }
+
+        if (dañoFinal > 0){
+            p2.setNivelVida(p2.getNivelVida() - dañoFinal);
+        }
+        if (dañoFinal2 > 0){
+            p1.setNivelVida(p1.getNivelVida() - dañoFinal2);
+        }
+
         num_combates++;
 
 

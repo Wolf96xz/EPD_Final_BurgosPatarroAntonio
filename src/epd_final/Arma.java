@@ -51,6 +51,9 @@ public class Arma {
 
     }
 
+    public int getTipo() {
+        return tipo;
+    }
 
     public int getPotencia() {
         return potencia;
